@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo-ex2.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+
+    <section>
+    
+        <div>
+            <label for="date">Data de Nascimento: </label>
+            <input type="date" id="date" value="">
+            
+        </div>
+
+        <div>
+            <!-- Para o radio der certo e não ficar marcando os dois, cada input deve ter o mesmo nome, que neste caso é "sex" -->
+            Sexo: <input type="radio" name="sex" id="M" value="masculino" > 
+            <label for="M"> Masculino </label>
+            <input type="radio" name="sex" id="F" value="feminino" > 
+            <label for="F">Feminino</label>
+        </div>
+
+        <div>
+            <button id="verify"  onclick ="verificar()"> Verificar</button>
+        </div>
+        
+        <div id="res">Preencha o questionário acima!</div>
+        <img id="imagem" src="Imagens/BB-F.png" alt="" width="550">
+    </section>
+
+    <footer>
+        <p>&copy; Curso de JS</p>
+    </footer>
+
+    <script src="script-ex2.js"></script>
+</body>
+    </html>
